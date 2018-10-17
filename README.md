@@ -3,7 +3,7 @@
 
 ## About
 
-This project is a solution to test required by Signaturit 
+This project is a solution to test required by Signaturit. Technologies used are:
 
 - Java 8
 - Maven
@@ -26,11 +26,15 @@ To compile with Maven you should run:
 
 To run all stories and scenarios:
 
-`mvn install`
+`mvn integration-test`
 
 To run a particular Story:
 
-`mvn install -DstoryFilter=facebookLoginAndPost`
+`mvn integration-test -DstoryFilter="facebookLoginAndPost"`
+
+To run tests filtering by metatag:
+
+`mvn integration-test -Dmeta.filter="+facebook"`
 
 ## Reports and Results
 
